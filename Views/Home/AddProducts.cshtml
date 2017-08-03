@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "AddProducts";
+}
+
+<h2>AddProducts</h2>
+
+<h3>@TempData["message"]</h3>
+@using (Html.BeginForm())
+{
+<table>
+    <tr>
+        <td>Name</td>
+        <td><input type="text" name="name" /></td>
+    </tr>
+
+    <tr>
+        <td>Price</td>
+        <td><input type="text" name="price" /></td>
+    </tr>
+
+    <tr>
+        <td>Discription</td>
+        <td><input type="text" name="discription" /></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" value="submit" name="brnsubmit" /></td>
+    </tr>
+   
+    
+</table>
+}
